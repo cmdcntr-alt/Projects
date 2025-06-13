@@ -1,0 +1,25 @@
+article {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+aside {
+    width: 60px;
+    height: 60px;
+    background: red;
+}
+
+    aside.green {
+    background: green;
+} 
+    aside.blue {
+    background: blue;
+}
+    aside.yellow {
+    background: yellow;
+}
