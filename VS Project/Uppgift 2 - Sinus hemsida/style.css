@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica;
+    font-family: 'Sora Regular';
     margin: 0;
     padding: 0;
     display: flex; 
@@ -14,20 +14,49 @@ main header nav {
 }
 
 main header a {
-padding: 10px;
-text-decoration: none;
-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+main header nav a:hover {
+    font-weight: bold;
+}
+
+main header nav a:active {
+    color: gray;
+}
+
+.nonsense {
+    margin: 0;
+    padding: 15px;
+}
+
+main section h1 {
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 0;
+    font-size: 25px;
+}
+
+main section h3 {
+    margin: 0;
+    padding: 15px;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: gray;
 }
 
 
 .wrapper {
     display: grid;
-    max-width: 1200px;
-    max-height: 1000px;
+    max-width: 1500px;
+    max-height: 500px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-auto-rows: 120px;
-    grid-gap: 25px;
+    grid-gap: 30px;
 }
 
 .hoodie {
@@ -39,19 +68,36 @@ img {
 }
 
 .logo {
-    width: 120px;
-    padding: 10px;
+    width: 140px;
+    padding: 0px;
 }
 
 .icon {
     width: 20px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
-section button {
+.button {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding: 10px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.button:hover {
+    background: gray;
+    color: black;
+}
+
+.button:active {
+    background: white;
+    color: black;
 }
 
 .grid1 {
@@ -60,26 +106,26 @@ section button {
     align-items: center;
     grid-column: 2 / 8;
     grid-row: 1 / 2;
-    padding: 20px;
+    padding: 0px;
     height: 100px;
 }
 
 .grid2 {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .grid3 {
     grid-column: 4 / 6;
     grid-row: 3 / 4;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .grid4 {
     grid-column: 6 / 8;
     grid-row: 3 / 4;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .grid5 {
@@ -90,12 +136,17 @@ section button {
 
 }
 
+.grid2:hover, .grid3:hover, .grid4:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
 footer section {
-    width: 130px;
+    width: 180px;
 }
 
 footer {
-    background: #eee;
+    background: #faf8f8;
+    padding: 30px;
 }
 
 footer section nav a {
@@ -104,6 +155,14 @@ footer section nav a {
     padding: 5px;
     text-decoration: none;
     color: black;
+}
+
+footer section nav a:hover {
+    font-weight: bold;
+}
+
+footer section nav a:active {
+    color: gray;
 }
 
 footer section nav h3 {
