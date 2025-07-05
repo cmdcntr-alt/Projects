@@ -4,17 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Recept för nybörjare</title>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <main class="wrapper">
-            <img
-                src="Background.png"
-                alt="Background Image"
-                class="background"
-            />
             <header>
-                <img src="Logo Bannerstyle.png" alt="Website Logo" />
+                <img src="Pictures/Logo Bannerstyle.png" alt="Website Logo" />
                 <section>
                     <h2>Välkommen till Recept för nybörjare!</h2>
                     <p>
@@ -30,6 +30,66 @@
                     </ul>
                 </nav>
             </header>
+            <section class="about">
+                <h2>Om oss</h2>
+                <p>
+                    Vi är passionerade matälskare som vill dela med oss av våra
+                    bästa recept och tips för att göra matlagning roligt och
+                    enkelt.
+                </p>
+            </section>
+            <section class="recipe">
+                <h2>Spaghetti Carbonara</h2>
+                <img
+                    src="Pictures/Spaghetti Carbonara.jpg"
+                    alt="Spaghetti Carbonara"
+                    class="recipe-image"
+                />
+                <h3>Ingedienser</h3>
+                <ul>
+                    <li>200g Spaghetti</li>
+                    <li>2st Äggulor</li>
+                    <li>100g Tärnad sidfläsk</li>
+                    <li>30g Parmesanost Riven</li>
+                    <li>1 tsk Svartpeppar</li>
+                    <li>1 krm Salt</li>
+                </ul>
+            </section>
+            <section class="recipe2">
+                <h3>Gör så här</h3>
+                <ol>
+                    <li>Koka pastan enligt förpackning.</li>
+                    <li>Skär sidfälsket i små tärningar.</li>
+                    <li>Stek de tärnade sidfläsket tills krispigt.</li>
+                    <li>Ta ur sidfläsket ur pannan.</li>
+                    <li>
+                        Låt fetter vara kvar i pannan och ställ det åt sidan för
+                        att svalna.
+                    </li>
+                    <li>Knäck äggen och separera äggulan från äggvitan.</li>
+                    <li>
+                        Lägg i äggulorna i en skål och vispa ner parmesanosten.
+                    </li>
+                    <li>Krydda med salt och peppar.</li>
+                    <li>Ta en dl pastavatten och häll i pannan med fettet.</li>
+                    <li>
+                        När pastan har kokat klart, häll av den i en sil och låt
+                        stå.
+                    </li>
+                    <li>
+                        Värm upp fettet och pastavattnet och låt koka i 2
+                        minuter under omrörning.
+                    </li>
+                    <li>Lägg i sidfläsket i pannan.</li>
+                    <li>Lägg i pastan i pannan.</li>
+                    <li>Häll över äggsmeten och blanda ordentligt.</li>
+                    <li>
+                        Låt allt koka ihop under cirka 2 minuter och rör om
+                        ofta.
+                    </li>
+                    <li>Nu är din carbonara färdig att serveras!</li>
+                </ol>
+            </section>
             <aside class="news">
                 <h2>Nyheter</h2>
                 <ul>
@@ -38,27 +98,48 @@
                     <li><a href="#">Säsongens råvaror</a></li>
                 </ul>
             </aside>
-            <aside>
-                <!-- Bildspel? -->
+            <aside class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="Pictures/pic1.png" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic2.png" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic3.png" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic4.png" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic5.png" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic6.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
             </aside>
             <section class="popular">
                 <h2>Populära recept</h2>
                 <article>
-                    <h3>Köttbullar med potatismos</h3>
+                    <h3 class="recipe-title">Köttbullar med potatismos</h3>
                     <p>
                         En klassiker som är lätt att laga och alltid uppskattad.
                     </p>
                     <a href="#">Läs mer</a>
                 </article>
                 <article>
-                    <h3>Pasta med tomatsås</h3>
+                    <h3 class="recipe-title">Pasta med tomatsås</h3>
                     <p>
                         En snabb och enkel rätt som passar perfekt till vardags.
                     </p>
                     <a href="#">Läs mer</a>
                 </article>
                 <article>
-                    <h3>Kycklingwok med grönsaker</h3>
+                    <h3 class="recipe-title">Kycklingwok med grönsaker</h3>
                     <p>
                         En hälsosam och färgglad rätt som är lätt att anpassa
                         efter smak.
@@ -99,6 +180,20 @@
                     </ul>
                 </section>
             </footer>
+            <img
+                src="Pictures/Background.png"
+                alt="Background Image"
+                class="background"
+            />
         </main>
+        <script>
+            // DOM Script init
+            new Splide(".splide", {
+                speed: 2500,
+                type: "loop",
+                autoplay: true,
+                interval: 6000,
+            }).mount();
+        </script>
     </body>
 </html>
