@@ -48,16 +48,7 @@
             </nav>
         </header>
         <section class="wrapper margin">
-            
-            </div>
-            <section class="about flex-center">
-                <p>
-                    Välkommen till vår receptsida! Här hittar du en mängd olika recept
-                    för alla tillfällen. Oavsett om du är nybörjare eller erfaren kock,
-                    har vi något för dig. Utforska våra kategorier som frukost, lunch,
-                    middag, vegetariskt, veganskt, glutenfritt, efterrätt och snacks.
-                    Bli medlem för att få tillgång till nya recept och tips varje dag!
-                    <div class="splide flex-center">
+            <div id="slider1" class="splide flex-center">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
@@ -80,12 +71,46 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+                <section class="nyhet flex-center">
+                    <h2>Månadens nyhet!</h2>
+                    <p>Smashburger med grillad majs och "loaded fries" vid sidan! </p>
+                    <p class="newslink">Klicka på <a href="#">>länken<</a> för att se receptet!</p>
                 </section>
-            </section>
-        <img src="Pictures/Background.png" alt="background" class="background">
-        <script>
+                <div id="slider2" class="splide flex-center">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="Pictures/pic1.png" alt="Slide 1" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic2.png" alt="Slide 2" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic3.png" alt="Slide 3" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic4.png" alt="Slide 4" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic5.png" alt="Slide 5" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Pictures/pic6.png" alt="Slide 6" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="Pictures/Background.png" alt="background" class="background">
+            <script>
             // DOM Script init
-            new Splide(".splide", {
+            new Splide("#slider1", {
+                speed: 2500,
+                type: "loop",
+                autoplay: true,
+                interval: 6000,
+            }).mount();
+            new Splide("#slider2", {
                 speed: 2500,
                 type: "loop",
                 autoplay: true,
