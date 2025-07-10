@@ -13,25 +13,34 @@
     </head>
     <body>
         <header class="header1 flex-center">
-        <a href="#">SE | Svenska </a>
-        <a href="#">Nya recept och tips för medlemmar varje dag!</a>
-        <a href="#">Bli medlem</a>
-        <a href="#">Logga in</a>
+            <a href="#">SE | Svenska </a>
+            <a href="#">Nya recept och tips för medlemmar varje dag!</a>
+            <a href="#">Bli medlem</a>
+            <a href="#">Logga in</a>
         </header>
         <header class="header2 flex-center margin">
             <img src="Pictures/Logo Bannerstyle.png" alt="Website Logo" />
             <div class="input-wrapper">
-  <input type="text" list="recept" placeholder="Vad letar du efter?" class="search-input">
-  <img src="Pictures/5613.jpg" alt="magnifying-glass" class="magnifying-glass">
-  <datalist id="recept">
-  <option value="Köttbullar med potatismos">
-  <option value="Lasagne">
-  <option value="Chokladtårta">
-  <option value="Vegansk tacos">
-  <option value="Blodpudding">
-  <option value="Hemmalagad pizza">
-</datalist>
-</div>
+                <input
+                    type="text"
+                    list="recept"
+                    placeholder="Vad letar du efter?"
+                    class="search-input"
+                />
+                <img
+                    src="Pictures/5613.jpg"
+                    alt="magnifying-glass"
+                    class="magnifying-glass"
+                />
+                <datalist id="recept">
+                    <option value="Köttbullar med potatismos"></option>
+                    <option value="Lasagne"></option>
+                    <option value="Chokladtårta"></option>
+                    <option value="Vegansk tacos"></option>
+                    <option value="Blodpudding"></option>
+                    <option value="Hemmalagad pizza"></option>
+                </datalist>
+            </div>
             <nav>
                 <ul class="flex-center">
                     <li>
@@ -48,69 +57,48 @@
             </nav>
         </header>
         <section class="wrapper margin">
-            <div id="slider1" class="splide flex-center">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="Pictures/pic1.png" alt="Slide 1" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic2.png" alt="Slide 2" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic3.png" alt="Slide 3" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic4.png" alt="Slide 4" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic5.png" alt="Slide 5" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic6.png" alt="Slide 6" />
-                        </li>
-                    </ul>
-                </div>
+            <section class="nyhet flex-center">
+                <h2>Månadens nyhet!</h2>
+                <p>
+                    Smashburger med grillad majs och "loaded fries" vid sidan!
+                </p>
+                <p class="newslink">
+                    Klicka på <a href="#">>länken<</a> för att se receptet!
+                </p>
+            </section>
+        </section>
+        <div class="splide flex-center">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="Pictures/pic1.png" alt="Slide 1" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Pictures/pic2.png" alt="Slide 2" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Pictures/pic3.png" alt="Slide 3" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Pictures/pic4.png" alt="Slide 4" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Pictures/pic5.png" alt="Slide 5" />
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Pictures/pic6.png" alt="Slide 6" />
+                    </li>
+                </ul>
             </div>
-                <section class="nyhet flex-center">
-                    <h2>Månadens nyhet!</h2>
-                    <p>Smashburger med grillad majs och "loaded fries" vid sidan! </p>
-                    <p class="newslink">Klicka på <a href="#">>länken<</a> för att se receptet!</p>
-                </section>
-                <div id="slider2" class="splide flex-center">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="Pictures/pic1.png" alt="Slide 1" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic2.png" alt="Slide 2" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic3.png" alt="Slide 3" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic4.png" alt="Slide 4" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic5.png" alt="Slide 5" />
-                        </li>
-                        <li class="splide__slide">
-                            <img src="Pictures/pic6.png" alt="Slide 6" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <img src="Pictures/Background.png" alt="background" class="background">
-            <script>
+        </div>
+        <img
+            src="Pictures/Background.png"
+            alt="background"
+            class="background"
+        />
+        <script>
             // DOM Script init
-            new Splide("#slider1", {
-                speed: 2500,
-                type: "loop",
-                autoplay: true,
-                interval: 6000,
-            }).mount();
-            new Splide("#slider2", {
+            new Splide(".splide", {
                 speed: 2500,
                 type: "loop",
                 autoplay: true,
