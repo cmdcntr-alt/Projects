@@ -42,7 +42,7 @@ body {
 .header2 {
     display: flex;
     flex-direction: row;
-    border: solid 2px rgba(255, 192, 203, 0.378);
+    background-color: hsl(34, 84%, 95%);
     height: 3rem;
 }
 
@@ -118,9 +118,7 @@ body {
 }
 
 .card {
-    background-color: hsl(35, 83%, 95%);
     padding: 1rem;
-    margin: 0.1rem;
     margin-top: 0;
 }
 
@@ -219,27 +217,62 @@ body {
 }
 
 .about {
-    grid-column: 12 / 23;
-    grid-row: 4 / 7;
+    grid-column: 17 / 23;
+    grid-row: 4 / 13;
     padding: 1rem;
     line-height: 1.5;
 }
 
-.splide {
-    grid-column: 12 / 23;
-    grid-row: 7 / 12;
-    display: flex;
+.about section {
+    padding: 0.2rem;
 }
 
-.splide .splide__track {
+.splide {
+    grid-column: 1 / 12;
+    grid-row: 10 / 13;
+}
+
+.splide__track {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.splide img {
+.slide1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.slide2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.slide3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.slide4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.slide5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.slide6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.image-group {
+    display: flex;
+    gap: 10px;
+}
+
+.image-group img {
     width: 100%;
     height: 100%;
 }
@@ -255,7 +288,7 @@ body {
 }
 
 .color {
-    background-color: hsl(35, 83%, 95%);
+    background-color: #f7f7f7;
 }
 
 .white {
