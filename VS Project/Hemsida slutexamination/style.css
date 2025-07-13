@@ -17,14 +17,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background: black;
-    height: 3rem;
+    height: 2rem;
     padding: 0.2rem;
 }
 
 .header1 a {
     display: flex;
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .header1 a:hover {
@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: hsl(34, 84%, 95%);
-    height: 3rem;
+    height: 4rem;
 }
 
 .header2 nav ul {
@@ -67,7 +67,7 @@ body {
 
 .header2 img {
     width: 8rem;
-    height: 3rem;
+    height: 4rem;
     margin-right: 1rem;
 }
 
@@ -269,7 +269,6 @@ body {
 
 .image-group {
     display: flex;
-    gap: 10px;
 }
 
 .image-group img {
