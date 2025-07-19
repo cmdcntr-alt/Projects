@@ -295,12 +295,16 @@ body {
    height: 100%;
 }
 
+.suggestion {
+   margin-top: 3rem;
+}
+
 .suggestion-input-name {
    padding: 0.5rem 1.5rem;
    border: none;
    border-radius: 2rem;
    font-size: 1rem;
-   height: 2.5rem;
+   height: 2rem;
    width: 10rem;
    font-family: inherit;
    background-color: #f7f7f7;
@@ -313,7 +317,7 @@ body {
    border: none;
    border-radius: 2rem;
    font-size: 1rem;
-   height: 17rem;
+   height: 11rem;
    width: 21.5rem;
    font-family: inherit;
    background-color: #f7f7f7;
@@ -418,4 +422,64 @@ button:hover {
 
 .margin {
    margin: 0.1rem;
+}
+
+.cc-window.cc-banner,
+.cc-window.cc-floating,
+.cc-window.cc-type-info {
+   left: 0 !important;
+   right: 0 !important;
+   bottom: 0 !important;
+   top: auto !important;
+   width: 100% !important;
+   border-radius: 0 !important;
+   box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.15);
+   font-size: 1rem !important;
+   padding: 1rem 2rem !important;
+   z-index: 9999 !important;
+}
+
+body .cc-window.cc-banner,
+body .cc-window.cc-floating,
+body .cc-window.cc-type-info {
+   top: auto !important;
+   bottom: 0 !important;
+   left: 0 !important;
+   right: 0 !important;
+   position: fixed !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: space-between !important;
+   flex-wrap: wrap !important;
+}
+
+body .cc-window.cc-invisible {
+   display: none !important;
+}
+
+body .cc-window.cc-banner {
+   top: auto !important;
+   bottom: 0 !important;
+}
+
+.cc-window .cc-message {
+   font-size: 1rem;
+}
+.cc-window .cc-link a {
+   color: #f7b347;
+   text-decoration: underline;
+   font-weight: bold;
+   margin-right: auto;
+   margin-left: 0;
+   padding: 0.5rem 1rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+}
+.cc-btn {
+   border-radius: 2rem !important;
+   padding: 0.5rem 1.5rem !important;
+   font-size: 1rem !important;
+   margin-left: 1rem !important;
 }

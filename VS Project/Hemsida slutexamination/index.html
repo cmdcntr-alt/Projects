@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -214,8 +214,13 @@
                   besöker vår sida och vi hoppas att du hittar något som passar
                   just dig!
                </p>
-               <p>
+               <p class="suggestion">
                   <u>Har du något recept du vill se som inte finns på sidan?</u>
+               </p>
+               <p style="font-size: 0.8rem">
+                  Genom att skicka in godkänner du att vi lagrar din information
+                  för att kunna hantera ditt förslag. Läs vår
+                  <a href="integritetspolicy.html">Integritetspolicy</a>.
                </p>
                <input
                   type="text"
@@ -234,6 +239,7 @@
          <section class="image3"></section>
       </section>
       <footer class="footer">
+         <a href="integritetspolicy.html">Integritetspolicy</a>
          <p>&copy; 2025 Recept för nybörjare. Alla rättigheter förbehållna.</p>
          <p>Kontakt: <a href="#">info@receptfornyborjare.se</a> 0707-123456</p>
          <div class="social-media">
@@ -268,6 +274,30 @@
             autoplay: true,
             interval: 6000,
          }).mount();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+      <script>
+         window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+               palette: {
+                  popup: { background: "#222", text: "#fff" },
+                  button: { background: "#f7b347", text: "#222" },
+               },
+               theme: "classic",
+               position: "bottom",
+               type: "opt-in",
+               layout: "basic",
+               content: {
+                  message:
+                     "Vi använder cookies för att förbättra din upplevelse.",
+                  dismiss: "Godkänn",
+                  allow: "Tillåt cookies",
+                  deny: "Neka",
+                  link: "Läs mer",
+                  href: "integritetspolicy.html",
+               },
+            });
+         });
       </script>
    </body>
 </html>
